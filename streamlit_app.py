@@ -39,7 +39,7 @@ def main():
         st.session_state.messages.append({"role": "assistant", "content": full_response})
 
 def assistant_action(prompt):
-    #url = st.secrets["url"]
+    url = st.secrets["url"]
     headers = {"Content-Type": "application/json"}
     data = {
         "model": "llama3.1",  # or whichever model you're using
